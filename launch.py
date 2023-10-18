@@ -105,8 +105,8 @@ def version_check(commit):
 
         
 def prepare_enviroment():
-    torch_command = os.environ.get('TORCH_COMMAND', "pip install -r 1requirements.txt")
-    requirements_file = os.environ.get('REQS_FILE', "1requirements.txt")
+    torch_command = os.environ.get('TORCH_COMMAND', "pip install -r requirements_versions.txt")
+    requirements_file = os.environ.get('REQS_FILE', "requirements_versions.txt")
     commandline_args = os.environ.get('COMMANDLINE_ARGS', "")
 
     gfpgan_package = os.environ.get('GFPGAN_PACKAGE', "git+https://github.com/TencentARC/GFPGAN.git@8d2447a2d918f8eba5a4a01463fd48e45126a379")
