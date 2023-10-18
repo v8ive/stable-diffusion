@@ -185,6 +185,7 @@ def prepare_enviroment():
     if not is_installed("lpips"):
         run_pip(f"install -r {os.path.join(repo_dir('CodeFormer'), 'requirements.txt')}", "requirements for CodeFormer")
 
+    run('pip install --upgrade pip', ' ---------- Upgrading Pip!!! ---------- ', ' ---------- FAILED TO UPDATE PIP ---------- ')
     run_pip(f"install -r {requirements_file}", "requirements for Web UI")
 
     if update_check:
